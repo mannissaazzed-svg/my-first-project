@@ -1,0 +1,3 @@
+from app.repositories.auth_repository import AuthRepository
+from app.repositories.droit_repository import DroitRepository
+from app.repositories.demande_repository import DemandeRepository

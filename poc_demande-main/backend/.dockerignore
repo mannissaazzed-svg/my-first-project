@@ -1,0 +1,32 @@
+# Fichiers et dossiers inutiles dans l'image Docker
+.git
+.gitignore
+.dockerignore
+Dockerfile
+docker-compose.yml
+README.md
+
+# Fichiers de configuration locaux
+.env
+
+# Dossiers d'environnement virtuel Python
+venv/
+.venv/
+env/
+
+# Fichiers générés et caches Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+htmlcov/
+.coverage
+
+# Dossiers IDEs
+.vscode/
+.idea/
+
+# Fichiers SQL et DB externes
+*.sqlite3
+*.db
