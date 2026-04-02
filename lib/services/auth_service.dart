@@ -1,4 +1,4 @@
-import 'api_service.dart';
+/*import 'api_service.dart';
 
 class AuthService {
   final ApiService api;
@@ -14,11 +14,11 @@ class AuthService {
     return token;
   }
 }
+*/
 
 
 
 
-/*
 import 'api_service.dart';
 
 class AuthService {
@@ -33,6 +33,6 @@ class AuthService {
     return data["access_token"];
   }
 }
-*/
+
 
 

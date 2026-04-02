@@ -1,4 +1,4 @@
-import 'api_service.dart';
+/*import 'api_service.dart';
 import '../models/droit.dart';
 
 class SupervisorsService {
@@ -10,14 +10,14 @@ class SupervisorsService {
     return (data as List).map((e) => Droit.fromJson(e)).toList();
   }
 }
+*/
 
 
 
 
 
 
-
-/*import '../models/droit.dart';
+import '../models/droit.dart';
 import 'api_service.dart';
 
 class SupervisorsService {
@@ -30,4 +30,4 @@ class SupervisorsService {
   }
 }
 
-*/
+

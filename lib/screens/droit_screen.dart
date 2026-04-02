@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+/*import 'package:flutter/material.dart';
 import '../services/api_service.dart';
 import '../services/supervisors_service.dart';
 import '../models/droit.dart';
@@ -72,6 +72,7 @@ class _SupervisorsScreenState extends State<SupervisorsScreen> {
   }
 }
 
+*/
 
 
 
@@ -79,8 +80,7 @@ class _SupervisorsScreenState extends State<SupervisorsScreen> {
 
 
 
-
-/*import 'package:flutter/material.dart';
+import 'package:flutter/material.dart';
 import '../services/api_service.dart';
 import '../models/demande.dart';
 import '../mocks/mock_data.dart';
@@ -193,22 +193,36 @@ class _SupervisorsScreenState extends State<SupervisorsScreen> {
                   const SizedBox(height: 25),
 
                   SizedBox(
-                    width: 150,
-                    child: ElevatedButton(
-                      onPressed: selectedWorker == null
-                          ? null
-                          : () {
-                              // الانتقال مباشرة إلى صفحة المهمات
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (_) => DemandesPage(missions: missionsList),
-                                ),
-                              );
-                            },
-                      child: const Text("Voir les missions"),
-                    ),
-                  ),
+  width: 180,
+  height: 45,
+  child: ElevatedButton(
+    style: ElevatedButton.styleFrom(
+      backgroundColor: Colors.purple, // لون الزر
+      foregroundColor: Colors.white, // لون النص
+      elevation: 5, // ظل خفيف
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12), // حواف دائرية
+      ),
+      textStyle: const TextStyle(
+        fontSize: 16,
+        fontWeight: FontWeight.bold,
+      ),
+    ),
+    onPressed: selectedWorker == null
+        ? null
+        : () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (_) => DemandesPage(
+                  missions: missionsList,
+                ),
+              ),
+            );
+          },
+    child: const Text("Voir les missions"),
+  ),
+),
 
                 ],
               ),
@@ -220,4 +234,3 @@ class _SupervisorsScreenState extends State<SupervisorsScreen> {
     );
   }
 }
-*/
