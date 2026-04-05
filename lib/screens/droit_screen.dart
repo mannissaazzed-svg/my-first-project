@@ -1,85 +1,3 @@
-/*import 'package:flutter/material.dart';
-import '../services/api_service.dart';
-import '../services/supervisors_service.dart';
-import '../models/droit.dart';
-import 'demandes.dart';
-import '../services/mission_service.dart';
-
-class SupervisorsScreen extends StatefulWidget {
-  final ApiService api;
-  const SupervisorsScreen({super.key, required this.api});
-
-  @override
-  State<SupervisorsScreen> createState() => _SupervisorsScreenState();
-}
-
-class _SupervisorsScreenState extends State<SupervisorsScreen> {
-  List<Droit> supervisors = [];
-  Droit? selectedSupervisor;
-
-  @override
-  void initState() {
-    super.initState();
-    loadSupervisors();
-  }
-
-  Future<void> loadSupervisors() async {
-    final service = SupervisorsService(widget.api);
-    final list = await service.getProfils();
-    setState(() => supervisors = list);
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('Choisir un rôle')),
-      body: Padding(
-        padding: const EdgeInsets.all(25),
-        child: Column(
-          children: [
-            DropdownButton<Droit>(
-              isExpanded: true,
-              hint: const Text('Choisir un superviseur'),
-              value: selectedSupervisor,
-              items: supervisors.map((s) {
-                return DropdownMenuItem(
-                  value: s,
-                  child: Text('${s.agentNom} – ${s.role}'),
-                );
-              }).toList(),
-              onChanged: (s) => setState(() => selectedSupervisor = s),
-            ),
-            const SizedBox(height: 25),
-            if (selectedSupervisor != null)
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (_) => DemandesPage(
-                        api: widget.api,
-                        structure: selectedSupervisor!.role,
-                      ),
-                    ),
-                  );
-                },
-                child: const Text('Voir les missions'),
-              ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-*/
-
-
-
-
-
-
-
 import 'package:flutter/material.dart';
 import '../services/api_service.dart';
 import '../models/demande.dart';
@@ -197,11 +115,11 @@ class _SupervisorsScreenState extends State<SupervisorsScreen> {
   height: 45,
   child: ElevatedButton(
     style: ElevatedButton.styleFrom(
-      backgroundColor: Colors.purple, // لون الزر
-      foregroundColor: Colors.white, // لون النص
+      backgroundColor: Colors.purple, 
+      foregroundColor: Colors.white, 
       elevation: 5, // ظل خفيف
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12), // حواف دائرية
+        borderRadius: BorderRadius.circular(12), 
       ),
       textStyle: const TextStyle(
         fontSize: 16,
