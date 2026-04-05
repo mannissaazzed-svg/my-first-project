@@ -1,31 +1,3 @@
-
-
-/*
-class ApiService {
-  String? token; 
-
-  
-  Future<Map<String, dynamic>> post(String endpoint, Map<String, dynamic> data) async {
-    return {};
-  }
-
-
-  Future<Map<String, dynamic>> put(String endpoint, Map<String, dynamic> data) async {
-    return {};
-  }
-
-  
-  Future<dynamic> get(String endpoint) async {
-    return {};
-  }
-
- 
-}
-*/
-
-
-
-
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
